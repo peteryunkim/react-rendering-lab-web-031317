@@ -2,6 +2,10 @@ import React from 'react';
 
 export default class Pikachu extends React.Component {
 
+  componentDidUpdate(prevProps, prevState){
+    this.resizePikachu()
+  }
+
   constructor(props) {
     super(props);
     this.state = {
